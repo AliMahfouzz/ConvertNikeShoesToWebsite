@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap_5.0.2/css/bootstrap.min.css" />
+
+    <title>Nike Website</title>
+
+    <style>
+      :root {
+        --secondary-color: #171614;
+      }
+
+      @font-face {
+        font-family: "Secular One";
+        src: url("./fonts/SecularOne-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "AbrilFatface";
+        src: url("./fonts/Roboto-Bold.ttf") format("truetype");
+      }
+
+      .navbar {
+        padding-top: 0px !important;
+      }
+
+      .navbar-brand {
+        background-color: #e80125;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+        color: black !important;
+        margin-left: 18px;
+      }
+
+      .second-element {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-family: "AbrilFatface";
+
+        font-weight: 100;
+      }
+
+      .dot {
+        height: 350px;
+        width: 350px;
+        background-image: linear-gradient(#f73352, white);
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .dott {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .dot-1 {
+        background-color: #ea0327;
+      }
+
+      .dot-2 {
+        background-color: #1079fe;
+      }
+
+      .dot-3 {
+        background-color: #fd8c01;
+      }
+
+      #nikee_image {
+        width: 388px;
+        height: 268px;
+        margin-top: 80px;
+        padding: 2px;
+        position: absolute;
+        margin-left: 10px;
+        z-index: 1000;
+      }
+
+      .collec {
+        position: absolute;
+        margin-top: 30px;
+        font-size: 80px;
+        margin-left: 35px;
+        z-index: 100;
+        font-weight: bolder;
+        font-style: oblique;
+      }
+
+      #SUMM {
+        position: absolute;
+        margin-top: -40px;
+        display: flex;
+      }
+
+      #SUMM span {
+        color: #e42b42;
+        margin-left: 25px;
+        font-family: "AbrilFatface";
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      .first_button {
+        background-image: linear-gradient(to right, #e80125, #f3546c);
+        width: 40%;
+        color: white;
+        text-decoration: none;
+
+        text-align: center;
+      }
+      .second_button {
+        width: 50%;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 50px;
+      }
+      .second_button img {
+        margin-left: 8px;
+      }
+
+      .dotts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+      }
+
+      .dotts span {
+        margin-top: 15px;
+      }
+
+      .carous {
+        width: 328px;
+        /* margin-left: 22px; */
+        margin-right: 50px;
+      }
+
+      .carous .img-carous {
+        width: 15%;
+      }
+
+      .num {
+        color: var(--secondary-color);
+        margin: 0 10px;
+        font-family: "AbrilFatface";
+        font-weight: 100;
+      }
+
+      .center_elements {
+        margin-top: 8%;
+      }
+
+      .active {
+        border-radius: 50%;
+        background-color: #e80125;
+        color: white;
+        padding: 0 5px 0px;
+        /* margin-top: 2px; */
+        margin-bottom: 8px;
+      }
+
+      .carous .numbers {
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        width: 65%;
+        justify-content: center;
+      }
+
+      .circle {
+        position: absolute;
+        /* top: 0; */
+        /* left: 0; */
+        right: 0px;
+        bottom: 0px;
+        width: 35%;
+        height: 80%;
+        background-image: linear-gradient(to left top, #f3546c, #faf0f1);
+        clip-path: circle(600px at right 1000px);
+        /* -webkit-clip-path: circle(49.4% at 49% 49%); */
+        /*clip-path: circle(49.4% at right 49% 49%);
+        clip-path: url('circleee.jpg);
+*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="nike.png" style="width: 50px; height: 40px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll navelements"
+              style="--bs-scroll-height: 100px; margin-left: 30%"
+            >
+              <li class="nav-item">
+                <a class="nav-link second-element" aria-current="page" href="#"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link second-element" href="#">Notices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link second-element" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link second-element" href="#">New Arrivals</a>
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col">
+                <a class="icon">
+                  <img
+                    src="shopping-cart.png"
+                    style="height: 24px; width: 24px"
+                  />
+                </a>
+              </div>
+              <div class="col">
+                <a class="icon">
+                  <img src="search.png" style="height: 24px; width: 24px" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row center_elements">
+        <div class="col-md-11 d-flex justify-content-center">
+          <div id="SUMM">
+            <span>S</span><span>U</span><span>M</span><span>M</span
+            ><span>E</span><span>R</span>
+          </div>
+          <div style="position: relative">
+            <span class="dot"> </span>
+          </div>
+
+          <img src="nike_shoes.png" id="nikee_image" />
+
+          <span class="second-element collec">COLLECTIONS</span>
+        </div>
+        <div class="col-md-1 dotts">
+          <span class="dott dot-1"></span>
+          <span class="dott dot-2"></span>
+          <span class="dott dot-3"></span>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="d-flex justify-content-center" style="width: 388px">
+          <a class="first_button shadow w-50">
+            <span> Buy now </span>
+          </a>
+          <a class="second_button d-flex w-50">
+            <span class="second-element"> Add to cart </span>
+            <img
+              src="add-cart.png"
+              style="width: 18px; height: 18px; margin-top: 4px"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="row mt-4 justify-content-center">
+        <div class="d-flex carous">
+          <div class="img-carous">
+            <img src="icons8-left-arrow-30.png" />
+          </div>
+          <div class="numbers">
+            <div class="num active"><span>1</span></div>
+            <span class="num">2</span>
+            <span class="num">3</span>
+            <span class="num">4</span>
+          </div>
+          <div class="img-carous">
+            <img src="icons8-right-arrow-30 (1).png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
